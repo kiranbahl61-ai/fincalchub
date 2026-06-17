@@ -1,0 +1,582 @@
+/* Professional Components - Complete Stylesheet */
+
+.hero {
+  background: linear-gradient(135deg, var(--primary-600) 0%, var(--secondary-600) 100%);
+  color: white;
+  padding: 4rem 2rem;
+  border-radius: var(--radius-lg);
+  margin-bottom: 3rem;
+  box-shadow: var(--shadow-xl);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.stat-card h3 {
+  margin: 0;
+  font-size: 0.875rem;
+  opacity: 0.9;
+}
+
+.stat-card .value {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.card {
+  background-color: var(--gray-50);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s ease;
+}
+
+[data-theme="dark"] .card {
+  background-color: var(--gray-100);
+  border-color: var(--gray-200);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+.card h3 {
+  color: var(--primary-600);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.button {
+  background-color: var(--primary-500);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.button:hover {
+  background-color: var(--primary-600);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+
+.button-secondary {
+  background-color: var(--secondary-500);
+}
+
+.button-secondary:hover {
+  background-color: var(--secondary-600);
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.input-group label {
+  font-weight: 600;
+  color: var(--gray-700);
+  font-size: 0.875rem;
+}
+
+[data-theme="dark"] .input-group label {
+  color: var(--gray-400);
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+  padding: 0.75rem;
+  border: 2px solid var(--gray-300);
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  background-color: white;
+  color: var(--gray-900);
+  transition: all 0.3s ease;
+}
+
+[data-theme="dark"] .input-group input,
+[data-theme="dark"] .input-group select,
+[data-theme="dark"] .input-group textarea {
+  background-color: var(--gray-200);
+  color: var(--gray-900);
+  border-color: var(--gray-300);
+}
+
+.input-group input::placeholder {
+  color: var(--gray-400);
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-500);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Calculator Styles */
+.calculator-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.calculator-card {
+  background: var(--gray-50);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow-md);
+}
+
+[data-theme="dark"] .calculator-card {
+  background: var(--gray-100);
+  border-color: var(--gray-200);
+}
+
+.calculator-card h3 {
+  color: var(--gray-900);
+  font-size: 1.75rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+[data-theme="dark"] .calculator-card h3 {
+  color: var(--gray-800);
+}
+
+.calculator-card p {
+  color: var(--gray-500);
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.calculator-form {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.form-section {
+  display: grid;
+  gap: 1rem;
+}
+
+.form-section h4 {
+  color: var(--gray-700);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+[data-theme="dark"] .form-section h4 {
+  color: var(--gray-500);
+}
+
+.calculator-result {
+  background: linear-gradient(135deg, var(--primary-600) 0%, var(--primary-500) 100%);
+  color: white;
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+  margin-top: 1.5rem;
+  box-shadow: var(--shadow-md);
+}
+
+.calculator-result h4 {
+  margin-top: 0;
+  font-size: 0.875rem;
+  opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.calculator-result .result-value {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.calculator-result .result-description {
+  font-size: 0.95rem;
+  opacity: 0.95;
+  margin-top: 0.75rem;
+}
+
+.calculator-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.calculator-actions button {
+  flex: 1;
+  min-width: 150px;
+  padding: 0.875rem 1.5rem;
+  border: none;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary-600) 0%, var(--primary-500) 100%);
+  color: white;
+  box-shadow: var(--shadow-md);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.btn-secondary {
+  background: var(--gray-200);
+  color: var(--gray-700);
+}
+
+.btn-secondary:hover {
+  background: var(--gray-300);
+}
+
+[data-theme="dark"] .btn-secondary {
+  background: var(--gray-300);
+  color: var(--gray-900);
+}
+
+[data-theme="dark"] .btn-secondary:hover {
+  background: var(--gray-400);
+}
+
+.tabs {
+  display: flex;
+  gap: 1rem;
+  border-bottom: 2px solid var(--gray-200);
+  margin-bottom: 1.5rem;
+}
+
+.tab-button {
+  background: none;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--gray-500);
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+  transition: all 0.3s ease;
+}
+
+.tab-button.active {
+  color: var(--primary-600);
+  border-bottom-color: var(--primary-600);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+.table th {
+  background-color: var(--gray-100);
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: var(--gray-700);
+  border-bottom: 2px solid var(--gray-200);
+}
+
+[data-theme="dark"] .table th {
+  background-color: var(--gray-200);
+  color: var(--gray-900);
+}
+
+.table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.table tbody tr:hover {
+  background-color: var(--gray-50);
+}
+
+[data-theme="dark"] .table tbody tr:hover {
+  background-color: var(--gray-100);
+}
+
+/* Feature Card Links - Home Page */
+.feature-card-link {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+  display: block;
+  position: relative;
+}
+
+.feature-card-link:hover {
+  transform: translateY(-4px);
+}
+
+.feature-card-link .card-cta {
+  color: var(--primary-500);
+  font-weight: 600;
+  display: block;
+  margin-top: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.feature-card-link:hover .card-cta {
+  opacity: 1;
+}
+
+.feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, var(--primary-600), var(--secondary-500));
+  border-radius: 999px;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.trust-icon {
+  color: var(--primary-600);
+  margin-bottom: 0.75rem;
+}
+
+/* Calculator Page Styles */
+.calculators-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.calculators-page h1 {
+  font-size: 2rem;
+  color: var(--gray-900);
+  margin-bottom: 0.5rem;
+}
+
+[data-theme="dark"] .calculators-page h1 {
+  color: var(--gray-800);
+}
+
+.calculators-page > div > p {
+  color: var(--gray-500);
+  font-size: 1.05rem;
+  margin-bottom: 3rem;
+}
+
+.calculators-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.calculator-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.calculator-section h3 {
+  font-size: 1.5rem;
+  color: var(--gray-900);
+  margin: 0;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--primary-500);
+}
+
+[data-theme="dark"] .calculator-section h3 {
+  color: var(--gray-800);
+}
+
+.section-description {
+  text-align: center;
+  color: var(--gray-600);
+  font-size: 0.95rem;
+  margin: 0 0 1.5rem 0;
+  opacity: 0.85;
+}
+
+[data-theme="dark"] .section-description {
+  color: var(--gray-400);
+}
+
+.calculator-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.calculator-card-link {
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.calculator-card-item {
+  background: linear-gradient(135deg, var(--primary-600) 0%, var(--primary-500) 100%);
+  color: white;
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 140px;
+}
+
+.calculator-card-item .card-emoji {
+  font-size: 1.8rem;
+  display: block;
+}
+
+.calculator-card-item .card-hint {
+  font-size: 0.85rem;
+  opacity: 0.85;
+  font-weight: 400;
+}
+
+.calculator-card-link:hover .calculator-card-item {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  background: linear-gradient(135deg, var(--primary-500) 0%, var(--secondary-500) 100%);
+}
+
+/* Calculator Help Section */
+.calculator-help-section {
+  margin: 3rem 0;
+  padding: 2rem;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.08) 0%, rgba(16, 185, 129, 0.08) 100%);
+  border-radius: 1.5rem;
+  border: 1px solid var(--border-color);
+}
+
+.calculator-help-section h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+.help-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.help-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+[data-theme="dark"] .help-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.help-step {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, var(--primary-600) 0%, var(--primary-500) 100%);
+  color: white;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.help-card h4 {
+  margin: 0.75rem 0 0.5rem 0;
+  color: var(--text-color);
+}
+
+.help-card p {
+  margin: 0;
+  color: var(--text-color);
+  line-height: 1.5;
+  opacity: 0.8;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 600;
+  background-color: var(--gray-200);
+  color: var(--gray-700);
+}
+
+.badge.success {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.badge.warning {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.badge.danger {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
