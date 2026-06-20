@@ -20,6 +20,34 @@ const Calculators: React.FC = () => {
 
       <div className="calculators-container">
         <div className="calculator-section">
+          <h3>⚡ Advanced Tools</h3>
+          <p className="section-description">Comprehensive financial analysis and decision-making tools</p>
+          <div className="calculator-grid">
+            <Link to="/gps" className="calculator-card-link" title="Get your financial health score and recommendations">
+              <div className="calculator-card-item">
+                <span className="card-emoji">🗺️</span>
+                <span>Financial Health GPS</span>
+                <span className="card-hint">Comprehensive analysis</span>
+              </div>
+            </Link>
+            <Link to="/calculators/loan-advisor" className="calculator-card-link" title="Compare loan options and make informed decisions">
+              <div className="calculator-card-item">
+                <span className="card-emoji">🤔</span>
+                <span>Loan Decision Guide</span>
+                <span className="card-hint">Smart loan comparison</span>
+              </div>
+            </Link>
+            <Link to="/market" className="calculator-card-link" title="Track market trends and economic indicators">
+              <div className="calculator-card-item">
+                <span className="card-emoji">📊</span>
+                <span>Market Dashboard</span>
+                <span className="card-hint">Economic insights</span>
+              </div>
+            </Link>
+          </div>
+        </div>
+
+        <div className="calculator-section">
           <h3>🧮 Core Calculators</h3>
           <p className="section-description">Essential tools for everyday financial decisions</p>
           <div className="calculator-grid">
@@ -98,34 +126,6 @@ const Calculators: React.FC = () => {
                 <span className="card-emoji">💼</span>
                 <span>EPF Calculator</span>
                 <span className="card-hint">Employee Provident Fund</span>
-              </div>
-            </Link>
-          </div>
-        </div>
-
-        <div className="calculator-section">
-          <h3>⚡ Advanced Tools</h3>
-          <p className="section-description">Comprehensive financial analysis and decision-making tools</p>
-          <div className="calculator-grid">
-            <Link to="/gps" className="calculator-card-link" title="Get your financial health score and recommendations">
-              <div className="calculator-card-item">
-                <span className="card-emoji">🗺️</span>
-                <span>Financial Health GPS</span>
-                <span className="card-hint">Comprehensive analysis</span>
-              </div>
-            </Link>
-            <Link to="/calculators/loan-advisor" className="calculator-card-link" title="Compare loan options and make informed decisions">
-              <div className="calculator-card-item">
-                <span className="card-emoji">🤔</span>
-                <span>Loan Decision Guide</span>
-                <span className="card-hint">Smart loan comparison</span>
-              </div>
-            </Link>
-            <Link to="/market" className="calculator-card-link" title="Track market trends and economic indicators">
-              <div className="calculator-card-item">
-                <span className="card-emoji">📊</span>
-                <span>Market Dashboard</span>
-                <span className="card-hint">Economic insights</span>
               </div>
             </Link>
           </div>
