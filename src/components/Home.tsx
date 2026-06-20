@@ -56,6 +56,19 @@ const Home: React.FC = () => {
         </div>
       </section>
 
+      <section className="calculator-showcase">
+        <h2>✨ Popular Financial Tools</h2>
+        <p style={{ textAlign: 'center', marginBottom: '2rem', color: '#666', fontSize: '1.05rem' }}>Start planning smarter with our free calculators</p>
+        <div className="calculator-quick-links">
+          <Link to="/calculators/loan" className="quick-link" style={{ borderTopColor: '#ef4444', backgroundColor: 'rgba(239, 68, 68, 0.05)' }}>💳 Loan EMI Calculator</Link>
+          <Link to="/calculators/sip" className="quick-link" style={{ borderTopColor: '#3b82f6', backgroundColor: 'rgba(59, 130, 246, 0.05)' }}>📈 SIP Calculator</Link>
+          <Link to="/calculators/tax" className="quick-link" style={{ borderTopColor: '#f59e0b', backgroundColor: 'rgba(245, 158, 11, 0.05)' }}>💰 Income Tax Calculator</Link>
+          <Link to="/calculators/retirement" className="quick-link" style={{ borderTopColor: '#10b981', backgroundColor: 'rgba(16, 185, 129, 0.05)' }}>🎯 Retirement Planner</Link>
+          <Link to="/calculators/ppf" className="quick-link" style={{ borderTopColor: '#8b5cf6', backgroundColor: 'rgba(139, 92, 246, 0.05)' }}>🏦 PPF Calculator</Link>
+          <Link to="/calculators/inflation" className="quick-link" style={{ borderTopColor: '#ec4899', backgroundColor: 'rgba(236, 72, 153, 0.05)' }}>📊 Inflation Calculator</Link>
+        </div>
+      </section>
+
       <section className="features-grid">
         <Link to="/calculators" className="feature-card feature-card-link" style={{ borderLeftColor: '#3b82f6' }}>
           <div className="feature-icon" style={{ color: '#3b82f6' }}><FaLightbulb size={32} /></div>
@@ -105,18 +118,6 @@ const Home: React.FC = () => {
           <h3>💰 Check Financial Health</h3>
           <p>Run our Personal Finance GPS for a comprehensive gap analysis including emergency fund adequacy and protection review.</p>
           <Link to="/gps" className="hero-button-secondary" style={{ backgroundColor: '#10b981', color: 'white', textDecoration: 'none' }}>Start GPS Analysis</Link>
-        </div>
-      </section>
-
-      <section className="calculator-showcase">
-        <h2>Popular Calculators</h2>
-        <div className="calculator-quick-links">
-          <Link to="/calculators/loan" className="quick-link" style={{ borderTopColor: '#ef4444', backgroundColor: 'rgba(239, 68, 68, 0.05)' }}>Loan EMI Calculator</Link>
-          <Link to="/calculators/sip" className="quick-link" style={{ borderTopColor: '#3b82f6', backgroundColor: 'rgba(59, 130, 246, 0.05)' }}>SIP Calculator</Link>
-          <Link to="/calculators/tax" className="quick-link" style={{ borderTopColor: '#f59e0b', backgroundColor: 'rgba(245, 158, 11, 0.05)' }}>Income Tax Calculator</Link>
-          <Link to="/calculators/retirement" className="quick-link" style={{ borderTopColor: '#10b981', backgroundColor: 'rgba(16, 185, 129, 0.05)' }}>Retirement Planner</Link>
-          <Link to="/calculators/ppf" className="quick-link" style={{ borderTopColor: '#8b5cf6', backgroundColor: 'rgba(139, 92, 246, 0.05)' }}>PPF Calculator</Link>
-          <Link to="/calculators/inflation" className="quick-link" style={{ borderTopColor: '#ec4899', backgroundColor: 'rgba(236, 72, 153, 0.05)' }}>Inflation Calculator</Link>
         </div>
       </section>
 
